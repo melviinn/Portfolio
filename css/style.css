@@ -38,7 +38,6 @@ a {
     transition: 0.5s;
 }
 
-
 .nav-links {
     padding-top: 10px;
     padding-left: 12px;
@@ -54,13 +53,11 @@ a {
     color: black;
 }
 
-.navbar a:hover {
-    color: #367dbb;
-}
-
+.navbar a:hover,
 .navbar li:hover {
     color: #367dbb;
 }
+
 
         /* Fin Navbar */
 
@@ -102,6 +99,10 @@ a {
 
 #accueil .container .left-content h5 {
     color: black;
+}
+
+#accueil .container .left-content .links i:hover {
+    color: #367dbb;
 }
 
 #accueil .container .right-content  {
