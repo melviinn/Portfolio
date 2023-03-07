@@ -16,12 +16,28 @@ const txtAnim = document.getElementById("text_anim");
 
 new Typewriter(txtAnim, {
     loop: true,
-    deleteSpeed: 20
+    deleteSpeed: 25
 })
 .changeDelay(80)
-.typeString('Duchaufour Melvin')
+.typeString('developpeur')
 .pauseFor(1000)
-.deleteChars(17)
+.deleteChars(11)
+.pauseFor(1000)
+.typeString('motivé')
+.pauseFor(1000)
+.deleteChars(6)
+.pauseFor(1000)
+.typeString('enthousiaste')
+.pauseFor(1000)
+.deleteChars(12)
+.pauseFor(1000)
+.typeString('polyvalent')
+.pauseFor(1000)
+.deleteChars(10)
+.pauseFor(1000)
+.typeString('assidu')
+.pauseFor(1000)
+.deleteChars(6)
 .pauseFor(1000)
 .start()
 
