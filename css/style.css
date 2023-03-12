@@ -131,8 +131,11 @@ a {
     justify-content: center;
 }
 
-#accueil .container .left-content .links i:hover {
+#accueil .container .left-content .links i {
     transition: .3s ease;
+}
+
+#accueil .container .left-content .links i:hover {
     color: var(--primary);
 }
 
@@ -352,16 +355,16 @@ a {
     justify-content: start;
 }
 
-#competences .container .right-content ul, li{
+#competences .container .right-content ul, li {
     list-style: none;
     padding: 0;
 }
 
-#competences .container .right-content .sessions{
+#competences .container .right-content .sessions {
     margin-top: 2px;
 }
 
-#competences .container .right-content li{
+#competences .container .right-content li {
     padding-bottom: 1.5rem;
     border-left: 1px solid #abaaed;
     position: relative;
@@ -369,12 +372,12 @@ a {
     margin-left: 10px;
 }
 
-#competences .container .right-content li:last-child{
+#competences .container .right-content li:last-child {
     border: 0px;
     padding-bottom: 20px;
 }
 
-#competences .container .right-content li:before{
+#competences .container .right-content li:before {
     content: '';
     width: 15px;
     height: 15px;
@@ -388,12 +391,12 @@ a {
     top: 0px;
 }
 
-#competences .container .right-content .time{
+#competences .container .right-content .time {
     color: #2a2839;
     font-weight: bold;
 }
 
-#competences .container .right-content p{
+#competences .container .right-content p {
     color: #4f4f4f;
     line-height: 1.5;
     margin-top :0.4rem;
@@ -402,11 +405,11 @@ a {
 #competences .container .right-content button {
     margin-top: -25px;
     padding: 5px;
+    transition: ease-in-out 0.2s;
 }
 
 #competences .container .right-content button:hover {
     transform: scale(1.05);
-    transition: ease-in-out 0.2s;
     box-shadow: 3px 2px 2px grey;
 }
 
@@ -497,6 +500,7 @@ a {
     width: 400px;
     padding: 10px;
     transform: scale(0.7);
+    transition: ease-in-out 0.3s;
 }
 
 #projets .container .container2 .card .img_symfony {
@@ -522,15 +526,17 @@ a {
     color: var(--primary);
 }
 
+#projets .container .card .card-body button {
+    transition: ease-in-out 0.2s;
+}
+
 #projets .container .container2 .card:hover {
     transform: scale(0.9);
-    transition: ease-in-out 0.3s;
     box-shadow: 8px 5px 5px grey;
 }
 
 #projets .container .card .card-body button:hover  {
     transform: scale(1.02);
-    transition: ease-in-out 0.2s;
     box-shadow: 3px 2px 2px grey;
 }
 
@@ -581,6 +587,11 @@ a {
 
 #contact {
     background-color: var(--white);
+}
+
+#contact .container footer .infos .container .row .navigation p,
+#contact .container footer .infos .container .row .contact p.mail a {
+    transition: ease-out .3s;
 }
 
 #contact .container footer .infos .container .row .navigation p:hover {
