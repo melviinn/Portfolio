@@ -532,7 +532,8 @@ a {
 
 #projets .container .container2 .card:hover {
     transform: scale(0.9);
-    box-shadow: 8px 5px 5px grey;
+    -webkit-box-shadow: 0px 0px 17px 3px rgba(0,0,0,0.54);
+    box-shadow: 0px 0px 17px 3px rgba(0,0,0,0.54);
 }
 
 #projets .container .card .card-body button:hover  {
