@@ -5,66 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" type="text/css"/>
     <script src="https://kit.fontawesome.com/8662a536ba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
 <body data-aos-easing="ease-in-out-back">
     <!-- Section "Navbar" -->
     <section id="navbar">
-        <nav id="navigation" class="navbar fixed-top navbar-expand navbar-light p-md-3">
-            <div class="container">
-                <a href="#" class="navbar-brand">Melvin</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="DropdownContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarContent">
-                <ul class="nav-links navbar-nav">
-                    <li class="nav-item">
-                        <a href="#profil" class="nav-link">
-                            <i class="fas fa-user fa-lg"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#competences" class="nav-link">
-                            <i class="fas fa-graduation-cap fa-lg"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#projets" class="nav-link">
-                            <i class="fas fa-briefcase fa-lg"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link">
-                            <i class="fas fa-envelope fa-lg"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+        <nav id="navigation" class="navbar">
+            <ul class="nav-links">
+                <li class="nav-item">
+                    <a href="#profil" class="nav-link">
+                        <i class="fas fa-user fa-lg"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#parcours" class="nav-link">
+                        <i class="fas fa-graduation-cap fa-lg"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projets" class="nav-link">
+                        <i class="fas fa-briefcase fa-lg"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">
+                        <i class="fas fa-envelope fa-lg"></i>
+                    </a>
+                </li>
+            </ul>
         </nav>
     </section>
     <!-- Fin Section "Navbar" -->
 
     <!-- Section "Accueil" -->
     <section id="accueil">
-        <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-offset="200" aos-duration="3000">
+        <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-offset="400" aos-duration="3000">
             <div class="left-content">
-                <img src="img/working-with-laptop.svg" alt="computer">
+                <img src="assets/profil.jpeg" alt="profil">
                 <h1>DUCHAUFOUR Melvin</h1>
-                <div style="display: flex; justify-content: center;line-height: 10px; margin-bottom: 10px">
-                    <h4>
-                        Je suis<h4 id="text_anim"><!--  ANIMATION D'ECRITURE JS  --></h4>
-                    </h4>
+                <div class="text_anim">
+                    <h2>
+                        Je suis<h2 id="text_anim"><!--  ANIMATION D'ECRITURE JS  --></h2>
+                    </h2>
                 </div>
                 <div class="links">
-                    <a href="https://www.linkedin.com/in/melvin-duchaufour-38490025a/" class="me-4 link-secondary" target="_blank" >
+                    <a href="https://www.linkedin.com/in/melvin-duchaufour-38490025a/" target="_blank" >
                         <i class="fab fa-linkedin fa-lg"></i>
                     </a>
-                    <a href="https://github.com/melviinn" class="me-4 link-secondary" target="_blank" >
+                    <a href="https://github.com/melviinn" target="_blank" >
                         <i class="fab fa-github fa-lg"></i>
                     </a>
                 </div>
@@ -73,14 +64,15 @@
     </section>
     <!-- Fin Section "Accueil" -->
 
+    <hr class="divider">
+
     <!-- Section "Profil" -->
     <section id="profil" >
-        <div class="container aos-init aos-animate" data-aos="fade-right" data-aos-offset="300" aos-duration="3000">
+        <div class="container aos-init aos-animate" data-aos="fade-right" data-aos-offset="400" aos-duration="3000">
             <div class="header">
                 <h1>Profil.</h1>
             </div>
-            <div class="row"></div>
-            <div class="col-lg-8 pt-3 pt-lg-0">
+            <div class="presentation">
                 <br>
                 <h3>Présentation</h3>
                 <p>Je m'appelle <b>DUCHAUFOUR Melvin</b>, j'ai 19 ans. Je suis étudiant en deuxième année de <b>BTS SIO</b> (Services
@@ -90,8 +82,7 @@
                 <b>BAC STI2D</b> (Sciences et Technologies de l'Industrie et du Développement Durable) option <b>SIN</b> (Système d'Information et Numérique) au lycée <b>Diderot à Paris 19e</b>,
                 je me suis ensuite spécialisé dans le <b>développement</b>, d'où mon choix de l'option SLAM.</p>
             </div>
-            <div class="row"></div>
-            <div class="col-lg-8 pt-6 pt-lg-0">
+            <div class="poursuite">
                 <br>
                 <h3>Projet professionnel</h3>
                 <p>Je veux devenir <b>développeur web Full Stack</b>.</p>
@@ -100,157 +91,153 @@
     </section>
     <!-- Fin Section "Profil" -->
 
-    <!-- Section "Compétences" -->
-    <section id="competences">
-        <div class="container d-flex aos-init aos-animate" data-aos="fade-right" data-aos-offset="200" aos-duration="3000">
-            <div class="left-content">
-                <div class="header">
-                    <h1>Compétences </h1>
-                </div>
-                <span>HTML</span>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 80%;"  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                    <div class="progress-value">80%</div>
-                </div>
-                <span>CSS</span>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%;"  aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                    <div class="progress-value">70%</div>
-                </div>
-                <span>PHP</span>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 60%;"  aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                    <div class="progress-value">60%</div>
-                </div>
-                <span>Java</span>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 50%;"  aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                    <div class="progress-value">50%</div>
-                </div>
-                <span>SQL</span>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%;"  aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                    <div class="progress-value">70%</div>
-                </div>
-                <span>Eclipse</span>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 50%;"  aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                    <div class="progress-value">50%</div>
-                </div>
-                <span>Visual Studio</span>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 75%;"  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                    <div class="progress-value">75%</div>
-                </div>
-            </div>
-            <div class="right-content">
+    <hr class="divider">
+
+    <!-- Section "Parcours" -->
+    <section id="parcours">
+        <div class="container aos-init aos-animate" data-aos="fade-right" data-aos-offset="400" aos-duration="3000">
+            <div class="content">
                 <div class="header">
                     <h1>Parcours</h1>
                 </div>
                 <ul class="sessions">
                     <li>
-                        <div class="time">2019 - 2021</div>
-                        <p>Bac STI2D (Sciences et Technologies de l'Industrie et du Développement Durable) option SIN (Système d'Information et Numérique).</p>
+                        <div class="time">2023 - 2026 (Projet d'étude futur) </div>
+                        <p>École 42 de Xavier Niel.</p>
                     </li>
                     <li>
                         <div class="time">2021 - 2023</div>
                         <p>BTS SIO (Services Informatiques aux Organisations) option SLAM (Solutions Logicielles et Applications Métiers).</p>
                     </li>
                     <li>
-                        <div class="time">2023 - 2026 (Projet d'étude futur) </div>
-                        <p>École 42 de Xavier Niel.</p>
+                        <div class="time">2019 - 2021</div>
+                        <p>Bac STI2D (Sciences et Technologies de l'Industrie et du Développement Durable) option SIN (Système d'Information et Numérique).</p>
                     </li>
                 </ul>
-                <div class="row"></div>
+                <div class="header">
+                    <h1>Compétences</h1>
+                </div>
             </div>
+        </div>
+    </section>
+    <!-- Fin Section "Parcours" -->
+
+
+    <!-- Section "Compétences" -->
+    <section id="competences">
+        <div class="skills">
+            <img src="assets/php.svg" alt="PHP" style="width=50px; height: 50px;">
+            <img src="assets/html.png" alt="HTML" style="width=70px; height: 70px;">
+            <img src="assets/css.png" alt="CSS" style="width=70px; height: 70px;">
+            <img src="assets/js.webp" alt="JS" style="width=70px; height: 70px;">
+            <img src="assets/symfony.png" alt="Symfony" style="width=70px; height: 70px;">
+            <img src="assets/java.png" alt="Java" style="width=70px; height: 70px;">
+            <img src="assets/c.png" alt="C" style="width=70px; height: 70px;">
+            <img src="assets/mysql.png" alt="SQL" style="width=70px; height: 70px;">
         </div>
     </section>
     <!-- Fin Section "Compétences" -->
 
+    <hr class="divider">
+
     <!-- Section "Projets" -->
     <section id="projets">
-        <div class="container aos-init aos-animate" data-aos="fade-right" data-aos-offset="200" aos-duration="3000">
+        <div class="container aos-init aos-animate" data-aos="fade-right" data-aos-offset="400" aos-duration="3000">
             <div class="header">
                 <h1>Projets</h1>
             </div>
-            <div class="container1 d-flex">
-                <div class="left-content">
-                    <img src="assets/logo-gsb.png" alt="gsb" class="gsb">
-                </div>
-                <div class="right-content">
-                    <h2>GSB-Frais <br>(Application web Symfony)</h2>
-                    <p>La société GSB vient d’installer son <b>infrastructure réseau</b>. Vous disposez du site intranet
-                    constitué de <b>deux parties</b>, l'une permettant aux visiteurs médicaux <b>d'enregistrer leurs dépenses</b>
-                    dans le cadre de leurs visites aux praticiens et de pouvoir les <b>consulter, modifier et/ou les supprimer</b>
-                    tant qu'ils n'ont pas été validés par les comptables. L'autre partie permettra aux comptables de <b>traiter</b>
-                    les dépenses saisies par les visiteurs, de les <b>valider et de les mettre en traitement</b>.</p>
+            <div class="gsb-content">
+                <div class="intro">
+                    <div class="left-content">
+                        <img src="assets/logo-gsb.png" alt="gsb" class="gsb">
+                    </div>
+                    <div class="right-content">
+                        <h2>GSB-Frais <br>(Application web Symfony)</h2>
+                        <p>La société GSB vient d’installer son <b>infrastructure réseau</b>. Vous disposez du site intranet
+                        constitué de <b>deux parties</b>, l'une permettant aux visiteurs médicaux <b>d'enregistrer leurs dépenses</b>
+                        dans le cadre de leurs visites aux praticiens et de pouvoir les <b>consulter, modifier et/ou les supprimer</b>
+                        tant qu'ils n'ont pas été validés par les comptables. L'autre partie permettra aux comptables de <b>traiter</b>
+                        les dépenses saisies par les visiteurs, de les <b>valider et de les mettre en traitement</b>.</p>
+                    </div>
                 </div>
             </div>
-            <div class="container2">
+            <div class="gsb-skills">
                 <div class="card">
-                    <img src="assets/logo-symfony.png" alt="Symfony" class="img_symfony">
+                    <div class="img">
+                        <img src="assets/logo-symfony.png" alt="Symfony" class="img_symfony">
+                    </div>
                     <div class="card-body" >
-                        <h4 class="card-title">Développement</h4>
-                        <p class="card-text">Pour le développement nous avons utilisé Symfony, un framework PHP qui représente un ensemble de composants (aussi appelés librairies) PHP autonomes qui peuvent être utilisés dans des projets web privé ou open source...</p>
-                        <button type="button" class="btn btn-btn-primary"><a href="https://symfony.com/doc/current/index.html" target="_blank" >Documentation de Symfony</a></button>
+                        <h3 class="card-title">Développement</h3>
+                        <p class="card-text">Pour le développement nous avons utilisé Symfony, un framework PHP qui représente un ensemble de librairies (composants) PHP autonomes qui peuvent être utilisés dans des projets web privés ou open source...</p>
+                        <button type="button" class="btn"><a href="https://symfony.com/doc/current/index.html" target="_blank" >Documentation de Symfony</a></button>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="assets/logo-doctrine.svg" alt="Doctrine" class="img_doctrine">
-                    <div class="doctrine card-body">
-                        <h4 class="card-title">Base de données</h4>
-                        <p class="card-text">Pour l'implémentation de la base de données nous avons utilisé l'ORM Doctrine, il est l'ORM par défaut du framework PHP Symfony et il permet de faire le lien ou "mapping" entre les objets et les éléments de la base de données.</p>
-                        <button type="button" class="btn btn-btn-primary"><a href="https://symfony.com/doc/current/doctrine.html" target="_blank" >Documentation de Doctrine ORM</a></button>
+                    <div class="img">
+                        <img src="assets/doctrine.png" alt="Doctrine" class="img_doctrine">
                     </div>
-                </div>
-                <div class="card">
-                    <img src="assets/logo-dbdiagram.png" alt="dbDiagram.io" style="margin-bottom: 10px;">
                     <div class="card-body">
-                        <h4 class="card-title">Modèle relationnel</h4>
-                        <p class="card-text" style="margin-bottom: 45px;">Pour créer le modèle relationnel de la base de données nous avons utilisé le site web dbdiagram.io qui permet d'exporter directement le code SQL après avoir crée le schéma de la base.</p>
-                        <button type="button" class="btn btn-btn-primary" style="background-color: #367dbb;"><a href="https://dbdiagram.io/docs/" target="_blank" >Documentation de dbdigram.io</a></button>
+                        <h3 class="card-title">Base de données</h3>
+                        <p class="card-text">Pour l'implémentation de la base de données nous avons utilisé l'ORM Doctrine, il permet de faire le lien ou "mapping" entre les objets et les éléments de la base de données.</p>
+                        <button type="button" class="btn"><a href="https://symfony.com/doc/current/doctrine.html" target="_blank" >Documentation de Doctrine ORM</a></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="assets/logo-dbdiagram.png" alt="dbDiagram.io" class="img_dbdiagram">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Modèle relationnel</h3>
+                        <p class="card-text">Pour créer le modèle relationnel de la base de données nous avons utilisé le site web dbdiagram.io qui permet d'exporter directement le code SQL après avoir crée le schéma de la base.</p>
+                        <button type="button" class="btn"><a href="https://dbdiagram.io/docs/" target="_blank" >Documentation de dbdigram.io</a></button>
                     </div>
                 </div>
             </div>
 
-            <div class="container d-flex">
+            <div class="ratp-content">
                 <div class="right-content">
-                    <h2 class="titre">Référentiel-Applis <br>(Application web Symfony)</h2>
+                    <h2 class="titre">Référentiel-Applis<br>(Application web Symfony)</h2>
                     <p>
-                        Cet outil contient le <b>référencement</b> des applications métiers de <b>l'unité ADFS</b>.
+                        Cet outil contient le <b>référencement</b> des applications métiers du groupe <b>RATP</b>.
                         Il comprend <b>deux aspects</b>: la partie <b>fonctionnelle</b> (cartographie, suivi des évolutions, RGPD, réforme fonctionnelle, etc...)
                         et la partie <b>technique et cybersécurité</b> (briques applicatives, environnements, obsolescence technique, etc...).
-                        Cet outil permet d’identifier rapidement les <b>impacts sur le parc applicatif</b> lors d'événements externes tels que
+                        Il permet d’identifier rapidement les <b>impacts sur le parc applicatif</b> lors d'événements externes tels que
                         les changements d’organisation ou les montées de version de l’environnement de travail de l’entreprise.
                     </p>
                 </div>
                 <div class="left-content">
-                    <img class="ratp" src="assets/RATP.svg" alt="gsb">
+                    <img class="ratp" src="assets/RATP.svg" alt="ratp">
                 </div>
             </div>
-            <div class="container2 d-flex">
-                <div class="card" style="width: 400px; padding: 10px;">
-                    <img src="assets/logo-symfony.png" alt="Symfony" style="margin-bottom: 10px; transform: scale(0.8);">
+            <div class="gsb-skills">
+                <div class="card">
+                    <div class="img">
+                        <img src="assets/logo-symfony.png" alt="Symfony" class="img_symfony">
+                    </div>
                     <div class="card-body" >
-                        <h4 class="card-title">Développement</h4>
-                        <p class="card-text">Pour le développement j'ai utilisé Symfony, un framework PHP qui représente un ensemble de composants (aussi appelés librairies) PHP autonomes qui peuvent être utilisés dans des projets web privé ou open source...</p>
-                        <button type="button" class="btn btn-btn-primary" style="background-color: #367dbb;"><a href="https://symfony.com/doc/current/index.html" target="_blank" >Documentation de Symfony</a></button>
+                        <h3 class="card-title">Développement</h3>
+                        <p class="card-text">Pour le développement j'ai utilisé Symfony, un framework PHP qui représente un ensemble de librairies (composants) PHP autonomes qui peuvent être utilisés dans des projets web privés ou open source...</p>
+                        <button type="button" class="btn"><a href="https://symfony.com/doc/current/index.html" target="_blank" >Documentation de Symfony</a></button>
                     </div>
                 </div>
-                <div class="card doctrine" style="width: 400px; padding: 10px;">
-                    <img src="assets/logo-doctrine.svg" alt="Doctrine" class="img_doctrine">
-                    <div class="doctrine card-body">
-                        <h4 class="card-title">Base de données</h4>
-                        <p class="card-text">Pour l'implémentation de la base de données j'ai utilisé l'ORM Doctrine, il est l'ORM par défaut du framework PHP Symfony et il permet de faire le lien ou "mapping" entre les objets et les éléments de la base de données.</p>
-                        <button type="button" class="btn btn-btn-primary" style="background-color: #367dbb;"><a href="https://symfony.com/doc/current/doctrine.html" target="_blank" >Documentation de Doctrine ORM</a></button>
+                <div class="card">
+                    <div class="img">
+                        <img src="assets/doctrine.png" alt="Doctrine" class="img_doctrine">
                     </div>
-                </div>
-                <div class="card" style="width: 400px; padding: 10px;">
-                    <img src="assets/logoPHPMyAdmin.png" alt="dbDiagram.io" class="phpMyAdmin" style="margin-bottom: 10px; height: 100px; width: 300px; margin-right: auto; margin-left: auto;">
                     <div class="card-body">
-                        <h4 class="card-title">Gestion base de données</h4>
-                        <p class="text1 card-text" style="margin-bottom: 30px;">Afin de gérer/insérer les données de la base, j'ai utilisé phpMyAdmin, un logiciel écrit en PHP qui est destiné à gérer graphiquement l’administration d’un serveur de base de données MySQL ou MariaDB.</p>
-                        <button type="button" class="btn btn-btn-primary" style="background-color: #367dbb;"><a href="https://www.phpmyadmin.net/docs/" target="_blank" >Documentation de phpMyAdmin</a></button>
+                        <h3 class="card-title">Base de données</h3>
+                        <p class="card-text">Pour l'implémentation de la base de données j'ai utilisé l'ORM Doctrine, ORM de base de Symfony, il permet de faire le lien ou "mapping" entre les objets et les éléments de la base de données.</p>
+                        <button type="button" class="btn"><a href="https://symfony.com/doc/current/doctrine.html" target="_blank" >Documentation de Doctrine ORM</a></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="assets/logoPHPMyAdmin.png" alt="phpMyAdmin" class="img_phpMyAdmin" style="width: 130px;">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Gestion base de données</h3>
+                        <p class="card-text">Pour la gestion des données de la base, j'ai utilisé phpMyAdmin, un logiciel écrit en PHP qui est destiné à gérer graphiquement l’administration d’un serveur de base de données MySQL ou MariaDB.</p>
+                        <button type="button" class="btn"><a href="https://www.phpmyadmin.net/docs/" target="_blank" >Documentation de phpMyAdmin</a></button>
                     </div>
                 </div>
             </div>
@@ -258,53 +245,55 @@
     </section>
     <!-- Fin Section "Projets" -->
 
+    <hr class="divider">
+
     <!-- Section "Contact" -->
     <section id="contact">
-        <div class="container aos-init aos-animate" data-aos="fade-right" data-aos-offset="200" aos-duration="3000">
+        <div class="container aos-init aos-animate" data-aos="fade-right" data-aos-offset="400" aos-duration="3000">
             <footer class="text-center text-lg-start bg-white text-muted">
-                <div class="infos p-1">
-                    <div class="container text-center text-md-start mt-5">
+                <div class="infos">
+                    <div class="container mt-5">
                         <div class="row mt-3">
-                            <div class="col-md-3 col-lg-4 col-xl-4 mx-auto mb-4">
-                                <h6 class="text-uppercase fw-bold mb-4">
+                            <div class="lieu-formation">
+                                <h4 class="header" style="margin-bottom: 10px; color: white; font-weight: bold; text-transform: uppercase;">
                                     Mon lieu de formation
-                                </h6>
+                                </h4>
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.6013085422023!2d2.4890500152963124!3d48.846743079286426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e60d7b3de6436d%3A0xcc8ac4f1da8a7bcc!2sLyc%C3%A9e%20Louis%20Armand!5e0!3m2!1sfr!2sfr!4v1671057581197!5m2!1sfr!2sfr" width="300" height="225" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" SameSite="none"></iframe>
                             </div>
-                            <div class="navigation col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                                <h6 class="text-uppercase fw-bold mb-4">
+                            <div class="navigation mx-auto mb-4" style="display: flex; flex-direction: column; gap: 10px">
+                                <h4 class="header" style="margin-bottom: 10px; color: white; font-weight: bold; text-transform: uppercase;">
                                     Navigation
-                                </h6>
+                                </h4>
                                 <p>
-                                    <a href="#accueil" class="text-reset">Accueil.</a>
+                                    <a href="#accueil">Accueil</a>
                                 </p>
                                 <p>
-                                    <a href="#profil" class="text-reset">Profil.</a>
+                                    <a href="#profil">Profil</a>
                                 </p>
                                 <p>
-                                    <a href="#competences" class="text-reset">Compétences.</a>
+                                    <a href="#parcours">Compétences</a>
                                 </p>
                                 <p>
-                                    <a href="#projets" class="text-reset">Projets.</a>
+                                    <a href="#projets">Projets</a>
                                 </p>
                             </div>
-                            <div class="contact col-md-4 col-lg-3 col-xl-4 mx-auto mb-md-0 mb-4">
-                                <h6 class="text-uppercase fw-bold mb-4">
+                            <div class="contact mx-auto mb-md-0 mb-4">
+                                <h4 class="header" style="margin-bottom: 10px; color: white; font-weight: bold; text-transform: uppercase;">
                                     Contact
-                                </h6>
+                                </h4>
                                 <p>
-                                    <i class="fas fa-home me-2 text-secondary"></i>
-                                    <a class="text-secondary" href="https://www.google.fr/maps/place/Nogent-sur-Marne/@48.836955,2.4636194,14z/data=!3m1!4b1!4m5!3m4!1s0x47e60d6bc85194b7:0x40b82c3688b3890!8m2!3d48.837631!4d2.481699"> Nogent-sur-Marne, 94130, FR</a>
+                                    <i class="fas fa-home me-2" style="color: white"></i>
+                                    <a class="text-secondary"> Nogent-sur-Marne, 94130 France</a>
                                 </p>
                                 <p class="mail">
-                                    <i class="fas fa-envelope me-2 text-secondary"></i>
+                                    <i class="fas fa-envelope me-2" style="color: white"></i>
                                     <a class="text-secondary" href="mailto:duchaufour.melvin.sio@gmail.com?">duchaufour.melvin.sio@gmail.com</a>
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+                <div class="text-center p-4" style="color: white;">
                     Copyright 2022 © <b>DUCHAUFOUR Melvin</b>
                 </div>
             </footer>
