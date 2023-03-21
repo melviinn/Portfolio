@@ -170,8 +170,7 @@ a {
 
 #profil {
     padding-left: var(--padding-left);
-    padding-bottom: 20px;
-    padding-right: 20px;
+    padding: 0px 0px 20px 20px;
 }
 
 #profil .container {
@@ -179,28 +178,15 @@ a {
 }
 
 #profil .container .header {
-    padding-top: 50px;
-    padding-bottom: 20px;
-}
-
-@media screen and (max-width: 1200px) {
-    #profil .header {
-        padding-bottom: 1px;
-    }
+    padding: 50px 0px 20px 0px;
 }
 
 #profil .container .header h1 {
-    font-size: 40px;
-    padding-bottom: 20px;
-    color: var(--blue);
-    font-weight: bolder;
     position: relative;
-}
-
-@media screen and (max-width: 1200px) {
-    #profil .header h1 {
-        font-size: xx-large;
-    }
+    color: var(--blue);
+    font-size: 40px;
+    font-weight: bolder;
+    padding-bottom: 20px;
 }
 
 #profil .container .header h1::after {
@@ -223,32 +209,38 @@ a {
 }
 
 @media screen and (max-width: 1200px) {
-    #profil h3 {
+    #profil .container h3 {
         font-size: x-large;
+    }
+
+    #profil .container .header h1 {
+        font-size: xx-large;
+    }
+
+    #profil .container .header {
+        padding-bottom: 1px;
     }
 }
 
-#profil .presentation {
+#profil .container .presentation {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
 
-#profil p {
+#profil .container p {
     font-weight: 300;
     line-height: 28px;
     color: var(--white);
 }
 
-
-
 @media screen and (max-width: 768px) {
-    #profil p {
+    #profil .container p {
         font-size: 14px;
     }
 }
 
-#profil p b {
+#profil .container p b {
     color: var(--blue);
 }
 
@@ -264,8 +256,7 @@ a {
 }
 
 #parcours .container .header {
-    padding-top: 50px;
-    padding-bottom: 30px;
+    padding: 50px 0px 30px 0px;
 }
 
 #parcours .competences .container {
@@ -275,11 +266,11 @@ a {
 }
 
 #parcours .container .header h1 {
-    font-size: 40px;
-    padding-bottom: 20px;
-    color: var(--blue);
-    font-weight: bolder;
     position: relative;
+    color: var(--blue);
+    font-size: 40px;
+    font-weight: bolder;
+    padding-bottom: 20px;
 }
 
 #parcours .container .header h1::after {
@@ -294,28 +285,11 @@ a {
     left: 0;
 }
 
-
-@media screen and (max-width: 1200px) {
-    #parcours .container {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    #parcours .container .content .header h1 {
-        padding-bottom: 10px;
-    }
-
-    #parcours .container .content .header {
-        padding-bottom: 30px;
-    }
-
-    #parcours .container .content button {
-        margin-bottom: 30px;
-        font-size: medium;
-        padding: 5px;
-    }
+#parcours .container .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-left: var(--padding-left);
 }
 
 #parcours .container .content button {
@@ -325,11 +299,29 @@ a {
     color: var(--white)
 }
 
-#parcours .container .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    padding-left: var(--padding-left);
+@media screen and (max-width: 1200px) {
+    #parcours .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #parcours .container .content .header h1 {
+        padding-bottom: 10px;
+    }
+
+    #parcours .container .content .header {
+        padding-bottom: 30px;
+    }
+
+    #parcours .container .content button {
+        font-size: medium;
+        margin-bottom: 30px;
+        padding: 5px;
+    }
+}
+
+#parcours .container .content .sessions {
+    margin-top: 2px;
 }
 
 #parcours .container .content ul, li {
@@ -337,40 +329,36 @@ a {
     padding: 0;
 }
 
-#parcours .container .content .sessions {
-    margin-top: 2px;
-}
-
-#parcours .container .content li {
-    padding-bottom: 1.5rem;
-    border-left: 1px solid var(--white);
+#parcours .container .content .sessions li {
     position: relative;
+    border-left: 1px solid var(--white);
+    padding-bottom: 1.5rem;
     padding-left: 20px;
     margin-left: 10px;
 }
 
-#parcours .container .content li:last-child {
+#parcours .container .content .sessions li:last-child {
     border: 0px;
     padding-bottom: 20px;
 }
 
-#parcours .container .content li:before {
+#parcours .container .content .sessions li:before {
     content: '';
+    position: absolute;
     width: 15px;
     height: 15px;
     background: var(--blue);
     border-radius: 50%;
-    position: absolute;
     left: -8.1px;
     top: 0px;
 }
 
-#parcours .container .content li:nth-child(3):before{
+#parcours .container .content .sessions li:nth-child(3):before{
     position: absolute;
     left: -7.1px;
 }
 
-#parcours .container .content .time {
+#parcours .container .content .sessions .time {
     color: var(--white);
     font-weight: bold;
 }
