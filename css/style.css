@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 :root {
-    --blue: #367dbb;
+    --blue: #2C8C99;
     --bg-black: #0d1117;
     --bg-nav-black: rgb(44, 44, 58);
     --black: rgb(57, 57, 57);
@@ -363,31 +363,18 @@ a {
     font-weight: bold;
 }
 
-#parcours .container .content p {
+#parcours .container .content .sessions li p {
     color: #a9a9a9;
     line-height: 1.5;
     margin-top :0.4rem;
 }
 
-#parcours .container .content button {
-    margin-top: -25px;
-    padding: 5px;
-    transition: ease-in-out 0.2s;
-}
-
-#parcours .container .content button:hover {
-    transform: scale(1.05);
-    box-shadow: 3px 2px 2px grey;
-}
-
-#parcours .container .content button:hover a {
-    color: var(--white);
-}
 
         /* Fin Section Compétences */
 
 
         /* Section Skills */
+
 
 #competences .skills {
     width: 100%;
@@ -463,7 +450,7 @@ a {
     align-items: center;
 }
 
-#projets .container .gsb-content .right-content {
+#projets .container .gsb-content .intro .right-content {
     max-width: 80%;
 }
 
@@ -522,7 +509,7 @@ a {
     margin-bottom: 30px;
 }
 
-#projets .container .gsb-skills {
+#projets .container .project-skills {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -530,50 +517,50 @@ a {
     margin: 80px 0px 150px 0;
 }
 
-#projets .container .gsb-skills .card {
+#projets .container .project-skills .card {
     width: 400px;
     height: 330px;
+    background-color: var(--white);
+    border-radius: 10px;
     padding: 20px;
     margin: 0;
     transform: scale(0.7);
     transition: ease-in-out 0.3s;
-    background-color: var(--white);
-    border-radius: 10px;
 }
 
-#projets .container .gsb-skills .card .card-body .card-text {
+#projets .container .project-skills .card .card-body .card-text {
     margin-bottom: 10px;
 }
 
-#projets .gsb-skills .card .img {
+#projets .project-skills .card .img {
     text-align: center;
     padding: 10px;
 }
 
-#projets .container .gsb-skills .card .img_symfony {
+#projets .container .project-skills .card .img_symfony {
     width: 180px;
 }
 
-#projets .container .gsb-skills .card .card-body button {
+#projets .container .project-skills .card .card-body button {
     position: absolute;
     bottom: 0;
     margin-bottom: 8px;
     background-color: var(--blue);
 }
 
-#projets .gsb-skills .card .img_doctrine {
+#projets .project-skills .card .img_doctrine {
     width: 130px;
 }
 
-#projets .gsb-skills .card .img_dbdiagram {
+#projets .project-skills .card .img_dbdiagram {
     width: 250px;
 }
 
-#projets .container .gsb-skills .card button {
+#projets .container .project-skills .card button {
     background-color: var(--blue);
 }
 
-#projets .container .gsb-skills .card h3 {
+#projets .container .project-skills .card h3 {
     color: var(--blue);
 }
 
@@ -588,7 +575,7 @@ a {
     color: var(--white);
 }
 
-#projets .container .gsb-skills .card:hover {
+#projets .container .project-skills .card:hover {
     transform: scale(0.9);
     -webkit-box-shadow: 0px 0px 17px 3px rgba(218, 218, 218, 0.54);
     box-shadow: 0px 0px 17px 3px rgba(218, 218, 218, 0.54);
@@ -610,36 +597,40 @@ a {
 
         /* Section Contact */
 
-footer {
+
+#contact .container footer {
     text-align: center;
 }
 
-footer .infos .container {
+#contact .container footer .infos .container {
     text-align: center;
     margin-top: 15px;
 }
 
-footer .infos .container .row {
+#contact .container footer .infos .container .row {
     display: flex;
     justify-content: space-around;
     margin-top: 10px;
 }
 
-#contact .container footer .infos .container .row .navigation p,
+#contact .container footer .infos .container .row .header {
+    color: var(--blue);
+}
+
+#contact .container footer .infos .container .row .navigation p a,
 #contact .container footer .infos .container .row .contact p.mail a {
-    transition: ease-out .3s;
+    transition: ease-out .2s;
 }
 
-#contact .container footer .infos .container .row .navigation p:hover {
-    color: var(--blue);
-}
-
+#contact .container footer .infos .container .row .navigation p:hover a,
 #contact .container footer .infos .container .row .contact p.mail:hover a {
-    color: var(--blue) !important;
+    color: var(--blue);
 }
 
-#contact .container footer .reseaux i:hover {
-    color: var(--blue);
+#contact .container footer .infos .container .row .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 @media screen and (max-width: 1200px) {
