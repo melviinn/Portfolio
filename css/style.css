@@ -602,6 +602,10 @@ a {
     text-align: center;
 }
 
+#contact .container footer .infos {
+    margin-bottom: 20px;
+}
+
 #contact .container footer .infos .container {
     text-align: center;
     margin-top: 15px;
@@ -639,5 +643,12 @@ a {
         height: 125px;
     }
 }
+
+@media screen and (max-width: 750px) {
+    .lieu-formation {
+        display: none;
+    }
+}
+
 
         /* Fin Section Contact */
